@@ -1,0 +1,42 @@
+@import '../colors/colors.scss';
+@mixin subtitle-font {
+    font-family: "Poppins";
+    color: $secondary--text--color;
+    font-weight: 600;
+    font-size: 20px;
+}
+@mixin title-font {
+    font-family: "Poppins";
+    color: $main--text--color;
+    font-weight: 500;
+    font-size: 48px;
+}
+@mixin description-font {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: $secondary--text--color;
+}
+@mixin button {
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 18px;
+    @include flex (row, center, center);
+    color: white;
+    text-align: center;
+    background-color: $button--color;   
+    border: 2px solid transparent;
+    border-radius: 20px 0px;
+    &:hover {
+        background-color: white;
+        color: $button--color;
+        border: 2px solid $button--color;
+    }
+}
+@mixin flex ($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}

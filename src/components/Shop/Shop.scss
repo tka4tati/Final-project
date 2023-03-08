@@ -1,0 +1,28 @@
+@import "../../assets/fonts/fonts.scss";
+@import "../../assets/colors/colors.scss";
+@import '../../assets/fonts/mixins.scss';
+
+.shop {
+    &__container {
+        max-width: 1440px;
+        width: 100%;
+        @include flex(column, center, center);
+        padding: 100px 0;
+    }
+    &__subtitle {
+        @include subtitle-font;
+    }
+    &__title {
+        @include title-font;
+    }
+    &__description {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        color: $secondary--text--color;
+        text-align: center;
+        margin: 0 0 70px;
+    }
+}

@@ -1,0 +1,36 @@
+@import "../../assets/fonts/fonts.scss";
+@import "../../assets/colors/colors.scss";
+@import '../../assets/fonts/mixins.scss';
+
+.info {
+    &__container {
+        max-width: 1440px;
+        width: 100%;
+        margin-top: 92px;
+        @include flex (row, space-between, center);
+    }
+    &__block{  
+        @include flex (column, space-evenly, start);
+        width: 632px;
+        height: 458px;
+        &-subtitle {
+            @include subtitle-font;
+        }
+        &-title {
+            font-family: 'Poppins';
+            font-weight: 600;
+            font-size: 72px;
+            line-height: 78px;
+            width: 560px;
+            color: $main--text--color;
+        }
+        &-description {
+            @include description-font;
+            width: 632.27px;
+        }
+    } 
+    &__image {
+        width: 630.79px;
+        height: 560.55px;
+    }
+}

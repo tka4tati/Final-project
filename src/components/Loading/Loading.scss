@@ -1,0 +1,48 @@
+@import "../../assets/fonts/fonts.scss";
+@import "../../assets/colors/colors.scss";
+@import '../../assets/fonts/mixins.scss';
+
+
+.skeleton{
+    opacity: .7;
+    animation: skeleton-loading 1s linear infinite alternate;
+}
+
+.skeleton-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: .25rem;
+    border-radius: .25rem;
+}
+
+.skeleton-box {
+    display: flex;
+    width: 1400px;
+    margin-top: 20px;
+    
+    .placeholder-glow{
+        width: 20%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .placeholder-wave{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@keyframes skeleton-loadind {
+    0% {
+        background-color: hsl(200, 20%, 70%);
+    }
+    100% {
+        background-color: hsl(200, 20%, 95%);
+    }
+}

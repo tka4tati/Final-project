@@ -1,0 +1,28 @@
+@import "../../assets/fonts/fonts.scss";
+@import "../../assets/colors/colors.scss";
+@import '../../assets/fonts/mixins.scss';
+
+.twenty {
+    &__container {
+        max-width: 1440px;
+        width: 100%;
+        @include flex(row, space-between, center);
+    }
+    &__image {
+        width: 680.79px;
+        height: 700.55px;
+    }
+    &__block {
+        @include flex (column, space-around, start);
+        width: 546px;
+        h1 {
+            font-family: 'Poppins';
+            font-weight: 500;
+            font-size: 50px;
+            line-height: 65px;
+            color: $main--text--color;
+            margin: 50px 0;
+            letter-spacing: 0.04em;
+        }
+    }
+}

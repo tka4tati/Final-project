@@ -1,0 +1,11 @@
+@import "../../assets/fonts/fonts.scss";
+@import "../../assets/colors/colors.scss";
+@import '../../assets/fonts/mixins.scss';
+
+
+
+.button {
+    width: 149.06px;
+    height: 47.36px;  
+    @include button;
+}

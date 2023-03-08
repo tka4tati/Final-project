@@ -1,0 +1,35 @@
+@import "../../assets/fonts/fonts.scss";
+@import "../../assets/colors/colors.scss";
+@import '../../assets/fonts/mixins.scss';
+
+.about {
+    &__container {
+        max-width: 1440px;
+        width: 100%;
+        @include flex(row, space-between, start);
+    }
+    &__image {
+        width: 680.79px;
+        height: 700.55px;
+    }
+    &__text {
+        margin-top: 50px;
+        @include flex (column, space-around, start);
+        width: 546px;
+        &-subtitle {
+            @include subtitle-font;
+        }
+        &-title {
+            @include title-font;
+            margin: 20px 0;
+            width: 540px;
+            line-height: 57px;
+            
+        }
+        &-description {
+            @include description-font;
+            width: 546px;
+            margin-bottom: 50px;
+        }
+    }
+}

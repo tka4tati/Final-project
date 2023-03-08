@@ -1,0 +1,108 @@
+@import "../../assets/fonts/fonts.scss";
+@import "../../assets/colors/colors.scss";
+@import '../../assets/fonts/mixins.scss';
+
+.form {
+    &__container {
+        max-width: 1440px;
+        width: 100%;
+        @include flex(column, center, center);
+        padding: 50px 0 70px;
+    }
+    &__title {
+        @include title-font;
+        position: relative;
+        letter-spacing: 0.08em;
+        z-index: -1;
+        &:after {
+            content:"";
+            position: absolute;
+            width: 461px;
+            height: 1px;
+            background-color: #C4C4C4;
+            top: 90px;
+            right: 90px;
+        }
+    }
+    &__description {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        color: $secondary--text--color;
+        text-align: center;
+        width: 50%;
+        margin: 77px 0 36px;
+    }
+    &__box {
+        width: 50%;
+        margin-bottom: 92px;
+        
+        &-container {
+            @include flex(row, space-between, center);
+            padding-bottom: 58px;
+            position: relative;
+            p {
+                position: absolute;
+                top: 50px;
+                left: 0;
+                color: $error--color;
+                margin: 0;
+                padding: 0;
+                font-size: 15px;
+            }
+        }
+        &-item {
+                width: 40%;
+                @include flex(column, space-between, center);
+                position: relative;
+                z-index: -1;
+                p {
+                    position: absolute;
+                    top: 50px;
+                    right: 20px;
+                    color: $error--color;
+                    margin: 0;
+                    padding: 0;
+                    font-size: 15px;
+                }
+        }
+        &-input {
+            background: #EEEEEE;
+            border-radius: 20px 0px;
+            border: 1px solid transparent;
+            height: 50px;
+            padding: 10px 0 10px 15px;
+            &::placeholder {
+                border: none;
+                font-family: 'Raleway';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 55px;
+                color: $secondary--text--color;
+            }
+            &.error{
+                border-bottom: 2px solid $error--color;
+                &:focus-visible {outline: none;}
+                &::placeholder {
+                    color: $error--color;
+                }
+            }
+            
+        }
+        input {
+            width: 100%;
+            position: relative;
+            z-index: -1;
+            &:hover {
+                border: 1px solid $button--color;
+            }
+            &:focus-visible {
+                outline: 2px solid $button--color;
+            }
+        }
+        
+    }
+}

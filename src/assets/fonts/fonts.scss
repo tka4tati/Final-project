@@ -5,6 +5,7 @@
     font-display: swap;
     src: url(./poppins/Poppins-Black.ttf) format("truetype");
     src: url(./poppins/Poppins-Regular.ttf) format("truetype");
+
   }
 @font-face {
     font-family: "Poppins";
@@ -23,24 +24,50 @@
     src: url(./poppins/Poppins-Medium.ttf) format("truetype");
   }
   @font-face {
-    font-family: "OpenSans";
+    font-family: "Open Sans";
     font-style: normal;
     font-weight: 400;
     font-display: swap;
     src: url(./open_sans/OpenSans/OpenSans-Regular.ttf) format("truetype");
-
+    src: url(./open_sans/OpenSans-VariableFont_wdth,wght.ttf) format("truetype");
   }
   @font-face {
-    font-family: "Poppins";
+    font-family: "Open Sans";
     font-style: normal;
     font-weight: 600;
     font-display: swap;
     src: url(./open_sans/OpenSans/OpenSans-SemiBold.ttf) format("truetype");
+    src: url(./open_sans/OpenSans-VariableFont_wdth,wght.ttf) format("truetype");
   }
   @font-face {
-    font-family: "Poppins";
+    font-family: "Open Sans";
     font-style: normal;
     font-weight: 500;
     font-display: swap;
     src: url(./open_sans/OpenSans/OpenSans-Medium.ttf) format("truetype");
+    src: url(./open_sans/OpenSans-VariableFont_wdth,wght.ttf) format("truetype");
+  }
+
+  @font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(./open_sans/OpenSans/OpenSans-ExtraBold.ttf) format("truetype");
+    src: url(./open_sans/OpenSans-VariableFont_wdth,wght.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "Basic Sans SF";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(./basic_sans_sf/basicsanssfbold.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(./raleway/Raleway-VariableFont_wght.ttf) format("truetype");
+    src: url(./raleway/static/Raleway-Medium.ttf) format("truetype");
   }

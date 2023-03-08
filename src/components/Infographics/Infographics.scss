@@ -1,0 +1,116 @@
+@import "../../assets/fonts/fonts.scss";
+@import "../../assets/colors/colors.scss";
+@import '../../assets/fonts/mixins.scss';
+
+.infographics {
+    background-color: $footer--background--color;
+    padding: 93px 0 100px;
+    width: 100%;
+    @include flex (column, center, center);
+    margin-top: 70px;
+    position: relative;
+    z-index: -100;
+    &__container {
+        max-width: 1440px;
+        width: 100%;
+        @include flex (column, center, center);
+        position: relative;
+    }
+    &__text {
+        h1 {
+            text-align: center;
+            @include title-font;
+        }
+    }
+    &__block {
+        @include flex(row, space-between, center);
+        width: 100%;
+        height: 278px;
+        margin: 87px 0 105px;
+        position: relative;
+        z-index:5;
+            &::after{
+                content: "";
+                background-image: url(../../assets/images/polyline2.svg);
+                position: absolute;
+                background-repeat: no-repeat;
+                width: 218px;
+                height: 100px;
+                right: 615px;
+                top: 100px;
+                z-index: -20;
+            }
+        
+        
+        &-up {
+            @include flex(column, start, center);
+            height: 100%;
+            position: relative;
+            z-index: 6;
+            &::after {
+                content: "";
+                background-image: url(../../assets/images/polyline1.svg);
+                position: absolute;
+                background-repeat: no-repeat;
+                width: 218px;
+                height: 100px;
+                right: -225px;
+                top: 100px;
+                z-index: -20;
+            }
+        }
+       
+        &-down {
+            @include flex(column, end, center);
+            height: 100%;
+            position: relative;
+            z-index: 6;
+        }
+
+    }
+    &__box {
+        
+        width: 185px;
+        height: 182px;
+        box-shadow: 0px 13px 16px rgba(0, 0, 0, 0.1);
+        border-radius: 40px 0px; 
+        @include flex(column, center, center);
+        &-number {
+            font-family: 'Open Sans';
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 60px;
+            text-align: center;
+            margin: 0;
+        }
+        &-description {
+            margin: 0;
+            font-family: 'Open Sans';
+            font-weight: 600;
+            font-size: 18px;
+            text-align: center;
+            color: $secondary--text--color;
+        }
+    }
+}
+    
+    polyline {
+    fill:white;
+    stroke: rgb(200, 199, 199);
+    stroke-width:1; 
+}
+// #first__polyline {
+//     position: absolute;
+//     top: 80px;
+//     left: 200px;
+// }
+// #second__polyline {
+//     position: absolute;
+//     top: 100px;
+//     left: 550px;
+// }
+// #third__polyline {
+//     position: absolute;
+//     top: 90px;
+//     left: 950px;
+// }

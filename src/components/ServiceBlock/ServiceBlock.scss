@@ -1,0 +1,74 @@
+@import "../../assets/fonts/fonts.scss";
+@import "../../assets/colors/colors.scss";
+@import '../../assets/fonts/mixins.scss';
+
+.service {
+    &__container {
+        max-width: 1440px;
+        width: 100%;
+        @include flex(column, space-evenly, start);
+        margin-top: 160px;
+        
+    }
+    &__subtitle {
+        @include subtitle-font;
+    }
+    &__title {
+        @include title-font;
+    }
+    &__filter {
+        width: 70%;
+        @include flex(row, space-between, center);
+        margin: 50px 0 100px;
+        &-item {
+            font-family: 'Open Sans';
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 78px;
+            background-color: $button--color;
+            color: white;
+            border: 2px solid $button--color;
+            width: 206.67px;
+            height: 46.04px;
+            border-radius: 20px;
+            @include flex(row, center, center);
+            cursor: pointer;
+            &:hover {
+                color: white;
+            }
+        }
+        &-item.active{
+            background-color:white;
+            color: $button--color;
+        }
+    }
+    &__directions {
+        width: 100%;
+        max-width: 1640px;
+        @include flex(row, space-evenly, center);
+        flex-wrap: wrap;
+        margin-bottom: 350px;
+        &-container {
+            width: 30%;
+            margin-bottom: 88px;
+        }
+        &-container.architecture {
+            background-color: $nav--button--background;
+            border-radius: 60px 0px;
+            color: white;
+        }
+        &-box {
+            padding: 40px;
+            @include flex(row, space-between, start);
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.14);
+            border-radius: 60px 0px;
+            height: 164.57px;
+           
+            img {
+                width: 44.92px;
+                height: 34.11px;
+                margin-right:10px;
+            }
+        }
+    }
+}

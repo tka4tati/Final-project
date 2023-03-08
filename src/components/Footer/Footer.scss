@@ -1,0 +1,101 @@
+@import "../../assets/fonts/fonts.scss";
+@import "../../assets/colors/colors.scss";
+@import '../../assets/fonts/mixins.scss';
+
+.footer {
+    width: 100%;
+    background-color: $footer--background--color;
+    padding: 93px 0 20px;
+    @include flex(column, center, center);
+    &__container {
+        max-width: 1440px;
+        width: 100%;
+        @include flex(row, space-between, start);
+    }
+    &__logo {
+        margin-bottom: 15px;
+        &-text {
+            margin:0;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            color: $secondary--text--color;
+        }
+    }
+    &__blocks {
+        @include flex(row, space-between, start);
+        width: 45%;
+        &-item {
+            h4 {
+                margin-bottom: 20px;
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 33px;
+                color: $main--text--color;
+            }
+            p {
+                margin:0;
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 40px;
+                color: $secondary--text--color;
+            }
+        }
+    }
+    &__socials {
+        width: 15%;
+        @include flex(column, space-between, center);
+         h4{
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 33px;
+            color: $main--text--color;
+         }
+        &-box {
+            @include flex(row, space-between, center);
+            width: 100%;
+            margin-top: 20px;
+        }
+        &-item {
+            background-color: #D5D5D5;
+            width: 37.17px;
+            height: 37.17px;
+            border-radius: 50%;
+            @include flex(row, center, center);
+            &:hover {
+                background-color: $button--color;
+            }
+        }
+    }
+    position: relative;
+    &::before {
+        content: "";
+        height: 1px;
+        width: 100%;
+        background-color: #C4C4C4;
+        position: absolute;
+        bottom: 90px;
+
+    }
+}
+.copyright {
+    margin-top: 84px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: $secondary--text--color;
+    
+    span {
+        color: #37806B;
+    }
+}
