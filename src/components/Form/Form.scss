@@ -56,8 +56,6 @@
         &-item {
                 width: 40%;
                 @include flex(column, space-between, center);
-                position: relative;
-                z-index: -1;
                 p {
                     position: absolute;
                     top: 50px;
@@ -94,8 +92,6 @@
         }
         input {
             width: 100%;
-            position: relative;
-            z-index: -1;
             &:hover {
                 border: 1px solid $button--color;
             }
