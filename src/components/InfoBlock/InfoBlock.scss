@@ -38,11 +38,11 @@
 @media screen and (max-width: 760px) {
     .info{
         &__container {
-        flex-direction: column;
+            flex-direction: column;
         }
         &__block {
             width: 90%;
-            height: 458px;
+            height: 620px;
             align-items: center;
             &-title {
                 font-size: 52px;

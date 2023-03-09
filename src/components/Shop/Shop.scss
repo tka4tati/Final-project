@@ -28,7 +28,7 @@
     
 }
 
-@media screen and (max-width: 760px ){
+@media screen and (min-width: 600.98px) and (max-width: 760px){
     .shop {
         &__container {
             padding: 50px 0;
@@ -36,6 +36,12 @@
         &__title {
             font-size: 40px;
         }
+    }
+
+}
+@media screen and (max-width: 600.9px){
+    .shop__container {
+        display: none;
     }
 
 }
