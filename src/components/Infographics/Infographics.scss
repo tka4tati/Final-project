@@ -24,11 +24,12 @@
     }
     &__block {
         @include flex(row, space-between, center);
+        flex-wrap: wrap;
         width: 100%;
         height: 278px;
         margin: 87px 0 105px;
         position: relative;
-        z-index:5;
+        z-index:auto;
             &::after{
                 content: "";
                 background-image: url(../../assets/images/polyline2.svg);
@@ -46,7 +47,7 @@
             @include flex(column, start, center);
             height: 100%;
             position: relative;
-            z-index: 6;
+            z-index: auto;
             &::after {
                 content: "";
                 background-image: url(../../assets/images/polyline1.svg);
@@ -69,7 +70,6 @@
 
     }
     &__box {
-        
         width: 185px;
         height: 182px;
         box-shadow: 0px 13px 16px rgba(0, 0, 0, 0.1);
@@ -93,24 +93,22 @@
         }
     }
 }
-    
     polyline {
     fill:white;
     stroke: rgb(200, 199, 199);
     stroke-width:1; 
 }
-// #first__polyline {
-//     position: absolute;
-//     top: 80px;
-//     left: 200px;
-// }
-// #second__polyline {
-//     position: absolute;
-//     top: 100px;
-//     left: 550px;
-// }
-// #third__polyline {
-//     position: absolute;
-//     top: 90px;
-//     left: 950px;
-// }
+@media screen and (max-width: 1400px) {
+    .infographics__block::after {
+       background-image: none;
+    }
+    .infographics__block-up::after {
+        background-image: none;
+     }
+}
+@media screen and (max-width: 760px) {
+    .infographics {
+        display: none;
+    }
+}
+

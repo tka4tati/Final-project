@@ -14,6 +14,8 @@
         position: relative;
         letter-spacing: 0.08em;
         z-index: -1;
+        text-align: center;
+        width: 100%;
         &:after {
             content:"";
             position: absolute;
@@ -21,7 +23,7 @@
             height: 1px;
             background-color: #C4C4C4;
             top: 90px;
-            right: 90px;
+            right: 35%;
         }
     }
     &__description {
@@ -36,7 +38,7 @@
         margin: 77px 0 36px;
     }
     &__box {
-        width: 50%;
+        width: 60%;
         margin-bottom: 92px;
         
         &-container {
@@ -54,9 +56,10 @@
             }
         }
         &-item {
-                width: 40%;
+                width: 45%;
                 @include flex(column, space-between, center);
-                p {
+                position: relative;
+                .first {
                     position: absolute;
                     top: 50px;
                     right: 20px;
@@ -64,6 +67,17 @@
                     margin: 0;
                     padding: 0;
                     font-size: 15px;
+                    line-height: 15px;
+                }
+                .second {
+                    position: absolute;
+                    top: 50px;
+                    right: 20px;
+                    color: $error--color;
+                    margin: 0;
+                    padding: 0;
+                    font-size: 15px;
+                    line-height: 15px;
                 }
         }
         &-input {
@@ -83,7 +97,9 @@
             }
             &.error{
                 border-bottom: 2px solid $error--color;
-                &:focus-visible {outline: none;}
+                &:focus-visible {
+                    outline: none;
+                }
                 &::placeholder {
                     color: $error--color;
                 }
@@ -100,5 +116,23 @@
             }
         }
         
+    }
+}
+@media screen and (max-width: 760px ) {
+    .form {
+        &__title {
+            font-size: 40px;
+            text-align: center;
+            &::after {
+                display: none;
+            }
+        }
+        &__description {
+            margin: 50px 0;
+        }
+        &__box {
+            width: 90%;
+            margin-bottom: 50px;
+        }
     }
 }

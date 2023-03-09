@@ -7,10 +7,11 @@
         max-width: 1440px;
         width: 100%;
         @include flex(row, space-between, center);
+        margin: 80px 0;
     }
     &__image {
-        width: 680.79px;
-        height: 700.55px;
+        width: 50%;
+        height: auto;
     }
     &__block {
         @include flex (column, space-around, start);
@@ -23,6 +24,30 @@
             color: $main--text--color;
             margin: 50px 0;
             letter-spacing: 0.04em;
+        }
+    }
+}
+@media screen and (max-width: 760px) {
+    .twenty {
+        &__container {
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+        &__block {
+            align-items: center;
+            h1 {
+                font-size: 40px;
+                line-height: 45px;
+                text-align: center;
+            }
+            &-image {
+                @include flex(column, center, center);
+                width: 70%;
+            }
+        }
+        &__image {
+            width: 85%;
+            margin-top: 50px;
         }
     }
 }
