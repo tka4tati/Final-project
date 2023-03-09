@@ -21,9 +21,14 @@
     }
     &__news {
         @include flex(row, space-between, center);
+        flex-wrap: wrap;
         width: 100%;
         &-item {
             width: 45%;
+            img {
+                width: 100%;
+                height: auto;
+            }
             h3 {
                 font-family: 'Open Sans';
                 font-style: normal;
@@ -47,5 +52,24 @@
     &__button {
         @include button;
         padding: 13px 35px;
+    }
+}
+@media screen and (max-width: 760px) {
+    .blog {
+        padding: 50px 0;
+        &__title {
+            margin: 15px 0 50px;
+        }
+        &__news {
+            flex-direction: column;
+            &-item {
+                width: 90%;
+                height: 750px;
+                @include flex(column, center, center);
+                h3, p {
+                    text-align: center;
+                }
+            }
+        }
     }
 }

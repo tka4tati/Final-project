@@ -28,17 +28,19 @@ export const Form = () => {
                   <input 
                   {...register("name")} 
                   className={`form__box-input ${errors.name?.message && "error"}`}
-                  type="text" placeholder='Enter your name.....'
+                  type="text" 
+                  placeholder='Enter your name.....'
                   />
-                  <p className="form__block-error">{errors.name?.message}</p>
+                  <p className="form__block-error first">{errors.name?.message}</p>
                 </div>
                 <div className="form__box-item">
                   <input 
                     {...register("surname")} 
                     className={`form__box-input ${errors.surname?.message && "error"}`}
-                    type="text"placeholder='Enter your surname.....'
+                    type="text"
+                    placeholder='Enter your surname.....'
                   />
-                  <p className="form__block-error">{errors.surname?.message}</p>
+                  <p className="form__block-error second">{errors.surname?.message}</p>
                 </div>
             </div>
             <div className="form__box-container"> 

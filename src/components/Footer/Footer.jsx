@@ -12,8 +12,8 @@ export const Footer = () => {
   return (
     <div id="contact" className="footer">
         <div className="footer__container">
-            <div>
-                <img className="footer__logo" src={Logo} alt="logo"/>
+            <div className="footer__logo">
+                <img className="footer__logo-img" src={Logo} alt="logo"/>
                 <p className="footer__logo-text">But i must explain to you all this mistaken </p>
                 <p className="footer__logo-text"> idea of dencouncing pleasure.</p>
             </div>
