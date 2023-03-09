@@ -6,6 +6,8 @@
     width: 100%;
     background-color: $footer--background--color;
     padding: 93px 0 20px;
+    position: relative;
+    z-index: -2;
     @include flex(column, center, center);
     &__container {
         max-width: 1440px;
@@ -24,6 +26,7 @@
             font-size: 18px;
             line-height: 28px;
             color: $secondary--text--color;
+            text-align: center;
         }
     }
     &__blocks {
@@ -47,6 +50,7 @@
                 font-size: 18px;
                 line-height: 40px;
                 color: $secondary--text--color;
+                
             }
         }
     }
@@ -96,7 +100,7 @@
     font-size: 18px;
     line-height: 25px;
     color: $secondary--text--color;
-    
+    text-align: center;
     span {
         color: #37806B;
     }
@@ -119,8 +123,9 @@
         &__socials {
             flex-direction: row;
             width: 40%;
+            margin-top: 20px;
             h4 {
-                width: 50%;
+                width: 100%;
                 text-align: center;
             }
             &-box {
@@ -157,9 +162,10 @@
         }
         &__socials {
             flex-direction: row;
-            width: 60%;
+            width: 80%;
+            margin-top: 20px;
             h4 {
-                width: 50%;
+                width: 100%;
                 text-align: center;
             }
             &-box {

@@ -8,7 +8,6 @@
         width: 100%;
         @include flex(column, space-evenly, start);
         margin-top: 160px;
-        
     }
     &__subtitle {
         @include subtitle-font;
@@ -51,21 +50,48 @@
         flex-wrap: wrap;
         margin-bottom: 350px;
         &-container {
-            width: 400px;
+            width: 420px;
             margin-bottom: 88px;
         }
         &-container.architecture {
             background-color: $nav--button--background;
             border-radius: 60px 0px;
             color: white;
+            h5 {
+                color: white;
+            }
+            p {
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                color: white;
+            }
         }
         &-box {
-            padding: 40px;
+            padding: 30px;
             @include flex(row, space-between, start);
             box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.14);
             border-radius: 60px 0px;
-            height: 164.57px;
-           
+            height: 135px 57px;
+            div {
+                h5 {
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 24px;
+                    color: $main--text--color;
+                    margin: 0;
+                }
+                p {
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    color: $secondary--text--color;
+                
+                }
+            }
             img {
                 width: 44.92px;
                 height: 34.11px;
@@ -82,6 +108,9 @@
         }
         &__directions {
             margin-bottom: 100px;
+            &-box {
+                padding: 20px;
+            }
         }
         &__filter {
             width: 100%;

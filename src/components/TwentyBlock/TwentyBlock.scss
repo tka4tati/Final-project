@@ -35,6 +35,8 @@
         }
         &__block {
             align-items: center;
+            justify-content: center;
+            width: 100%;
             h1 {
                 font-size: 40px;
                 line-height: 45px;
@@ -43,6 +45,7 @@
             &-image {
                 @include flex(column, center, center);
                 width: 70%;
+                margin-left: 10%;
             }
         }
         &__image {

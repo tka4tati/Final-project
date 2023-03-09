@@ -7,7 +7,7 @@ export const FeedbacksProfile = ({photo, profileName, post}) => {
     <div className="feedbacks__profile">
         <img className="feedbacks__profile-photo" src={photo} alt="user photo"/>
         <div className="feedbacks__profile-text">
-            <p>
+            <p className="feedbacks__profile-user">
                 <span className="feedbacks__profile-name">{profileName}</span>
                 <span className="feedbacks__profile-post"> {post}</span>
             </p>
